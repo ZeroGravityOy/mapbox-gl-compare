@@ -5,15 +5,7 @@ const presetConfig = createDefaultPreset()
 const jestConfig: JestConfigWithTsJest = {
   ...presetConfig,
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  transform: {
-    "^.+\\.tsx?$": [
-      "ts-jest",
-      {
-        diagnostics: false,
-      },
-    ],
-  },
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts']
 }
 
 export default jestConfig

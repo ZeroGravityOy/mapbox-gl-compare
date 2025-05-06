@@ -1,3 +1,5 @@
+import type mapboxgl from 'mapbox-gl';
+
 jest.mock('mapbox-gl', () => {
   const actualMapboxgl = jest.requireActual('mapbox-gl');
   return {
