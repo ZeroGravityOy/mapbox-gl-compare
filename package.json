@@ -4,8 +4,11 @@
   "description": "Swipe and sync between two maps",
   "files": ["dist"],
   "exports": {
-    "require": "./dist/cjs/index.js",
-    "import": "./dist/esm/index.js"
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    },
+    "./dist/*.css": "./dist/*.css"
   },
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
